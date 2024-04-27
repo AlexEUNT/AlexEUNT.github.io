@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: lightblue;
+}
+
+header {
+background-color: darkblue;
+color: white;
+padding: 30px;
+}
+
+nav {
+float: left;
+width: 30%;
+}
+
+section {
+float: right;
+width: 70%;
+}
+
+/* Clear floats after the header */
+header:after {
+content: "";
+display: table;
+clear: both;
+}
+
+footer {
+background-color: darkblue;
+color: white;
+text-align: center;
+padding: 10px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on smaller screens */
+@media (max-width: 600px) {
+nav, section {
+width: 100%;
+float: none;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Puppy Love Dog Sitting</h1>
+<p>Quality Care for Your Furry Friends</p>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section>
+<h2>Our Services</h2>
+<p>We offer a variety of dog sitting services to meet your pet's needs:</p>
+
+<div class="service">
+<h3>Daycare</h3>
+<p>Full-day play and exercise in our play yard. $30/day.</p>
+</div>
+
+<div class="service">
+<h3>Overnight Stays</h3>
+<p>We'll give your pup a comfy bed and lots of love. $50/night.</p>
+</div>
+
+<div class="service">
+<h3>House Sitting</h3>
+<p>We'll take care of feeding, walking and cleaning up after your furry friend while you're away. $75/day.</p>
+</div>
+</section>
+
+<footer>
+<p>Copyright 2023 Puppy Love Dog Sitting</p>
+</footer>
+
+</body>
+</html>
