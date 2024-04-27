@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Sitting Services</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body background */
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .service {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .service img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Form styles */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dog Sitting Services</h1>
+        <button class="btn">Home</button>
+        <button class="btn">Services</button>
+    </header>
+
+    <div class="container">
+        <div class="service">
+            <img src="dog.jpg" alt="Dog Sitting">
+            <h2>Standard Dog Sitting</h2>
+            <p>Our standard dog sitting service includes:</p>
+            <ul>
+                <li>Feeding and water</li>
+                <li>Walks and playtime</li>
+                <li>Basic grooming</li>
+            </ul>
+            <p><strong>Price: $30 per day</strong></p>
+        </div>
+
+        <div class="service">
+            <img src="dog2.jpg" alt="Premium Dog Sitting">
+            <h2>Premium Dog Sitting</h2>
+            <p>Our premium dog sitting service includes:</p>
+            <ul>
+                <li>Personalized attention</li>
+                <li>Special dietary needs</li>
+                <li>Extended playtime</li>
+            </ul>
+            <p><strong>Price: $50 per day</strong></p>
+        </div>
+
+        <form>
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 Dog Sitting Services
+    </footer>
+</body>
+</html>
