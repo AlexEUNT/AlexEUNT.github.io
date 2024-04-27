@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Sitting Company</title>
+<style>
+  body { font-family: Arial, sans-serif; background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); }
+  header { background: #f9d423; padding: 10px 0; text-align: center; }
+  header a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+  .content { padding: 20px; text-align: center; }
+  .footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
+  form { margin-top: 20px; }
+  label { display: block; margin-bottom: 5px; }
+  input, textarea { margin-bottom: 10px; padding: 10px; width: 80%; }
+  button { padding: 10px 20px; background: #fe8a71; color: #fff; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+  <header>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <button onclick="alert('Contact us for more!')">Contact</button>
+  </header>
+  <div class="content">
+    <h1>Welcome to the Dog Sitting Company</h1>
+    <img src="dog_image.jpg" alt="Happy Dog">
+    <p>Providing the best care for your furry friends!</p>
+    <h2>Our Services</h2>
+    <p>Starting at $50/day, we offer 24/7 care, long walks, and plenty of playtime.</p>
+  </div>
+  <div class="footer">&copy; 2023 Dog Sitting Company</div>
+  <div class="form">
+    <form>
+      <h3>Book Our Services</h3>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="dog">Dog's Name:</label>
+      <input type="text" id="dog" name="dog">
+      <label for="service">Choose a Service:</label>
+      <select id="service" name="service">
+        <option value="daycare">Day Care</option>
+        <option value="longstay">Long Stay</option>
+      </select>
+      <label for="message">Special Instructions:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
